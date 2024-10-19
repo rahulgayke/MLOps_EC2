@@ -1,0 +1,22 @@
+<h1>A machine learning model to predict the Wine class </h1>
+<h2>Please enter your inputs below:</h2>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    
+    {{ form.Fixed_Acidity.label }} {{form.Fixed_Acidity}}
+    <br>
+    {{ form.Volatile_Acidity.label}} {{form.Volatile_Acidity}}
+    <br>
+    {{form.Citric_Acid.label}}{{form.Citric_Acid}}
+    <br>
+    {{form.Residual_Sugar.label}}{{form.Residual_Sugar}}
+    <br>
+    {{form.Total_Sulfur_Dioxide.label}}{{form.Total_Sulfur_Dioxide}}
+    <br>
+    {{form.pH.label}}{{form.pH}}
+    <br>
+    {{form.Alcohol.label}}{{form.Alcohol}}
+    <br>
+    {{ form.submit() }}
+</form>
